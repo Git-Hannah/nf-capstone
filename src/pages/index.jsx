@@ -11,15 +11,26 @@ const StyledImage = styled(Image)`
 `;
 
 const A = ({ children, className }) => {
-	return (
-		<div className={className}>
-			{children}
-		</div>
-	)
-}
+	return <div className={className}>{children}</div>;
+};
 const B = styled(A)`
-background: pink;
-`
+	background: pink;
+`;
+
+const exercises = [
+	{
+		id: "Clown",
+		name: "Clown",
+		description: "This is a clown exercise",
+		duration: "5min", // 5 minutes -> 5*60*1000
+	},
+	{
+		id: "Fixpoint",
+		name: "Fixpoint",
+		description: "This is a Fixpoint exercise",
+		duration: "10min", // 10 minutes -> 10*60*1000
+	},
+];
 
 const Page = () => {
 	return (
@@ -33,6 +44,16 @@ const Page = () => {
 				layout="fixed"
 			/>
 			<Button>Mime Workout</Button>
+			<ul>
+				{exercises.map(exercise => {
+					return (
+						<li key={exercise.id}>
+							<h2>{exercise.name}</h2>
+							<p>{exercise.description}</p>
+						</li>
+					);
+				})}
+			</ul>
 		</B>
 	);
 };

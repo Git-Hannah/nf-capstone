@@ -9,6 +9,7 @@ import styled from "@emotion/styled";
 const StyledImage = styled(Image)`
 	border-radius: 100px;
 `;
+
 const A = ({ children, className }) => {
 	return (
 		<div className={className}>

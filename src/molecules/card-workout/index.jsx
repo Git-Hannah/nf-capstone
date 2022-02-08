@@ -1,4 +1,5 @@
 import React from "react";
+import CardExercise from "../../molecules/card-exercise";
 
 const exercises = [
 	{
@@ -33,16 +34,19 @@ const exercises = [
 
 const CardWorkout = () => {
 	return (
-		<ul>
-			{exercises.map(exercise => {
-				return (
-					<li key={exercise.id}>
-						<h2>{exercise.name}</h2>
-						<p>{exercise.description}</p>
-					</li>
-				);
-			})}
-		</ul>
+		<div>
+			<CardExercise />
+			<ul>
+				{exercises.map(exercise => {
+					return (
+						<li key={exercise.id}>
+							<h2>{exercise.name}</h2>
+							<p>{exercise.description}</p>
+						</li>
+					);
+				})}
+			</ul>
+		</div>
 	);
 };
 

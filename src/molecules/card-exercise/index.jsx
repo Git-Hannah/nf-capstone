@@ -22,7 +22,7 @@ const ExpandMore = styled(props => {
 	}),
 }));
 
-const CardExercise = () => {
+const CardExercise = ({ name, description, duration, image }) => {
 	const [expanded, setExpanded] = React.useState(false);
 
 	const handleExpandClick = () => {
@@ -31,28 +31,22 @@ const CardExercise = () => {
 
 	return (
 		<Card sx={{ maxWidth: 345 }}>
-			<CardHeader title="Fixpoint" />
-			<Image src="/../public/images/fixpoint.png" height="50vw" width="80vw" alt="Fixpoint" />
-			<CardContent />
+			<CardHeader title={name} />
+			<Image src={image} height="50vw" width="80vw" alt="Fixpoint" />
+			<CardContent>Time: {duration}</CardContent>
 			<CardActions disableSpacing>
 				<ExpandMore
 					expand={expanded}
-					onClick={handleExpandClick}
 					aria-expanded={expanded}
 					aria-label="show more"
+					onClick={handleExpandClick}
 				>
 					<ExpandMoreIcon />
 				</ExpandMore>
 			</CardActions>
-			<Collapse in={expanded} timeout="auto" unmountOnExit>
+			<Collapse unmountOnExit in={expanded} timeout="auto">
 				<CardContent>
-					<Typography paragraph>
-						Put your hand on a fixed object like a table or wall, move around it with
-						your body without moving the hand. Notice how your arm moves and looks. Take
-						your hand an inch away from the object, let it hover there and repeat the
-						movements, again without moving the hand. Try with different states of
-						muscle tension!
-					</Typography>
+					<Typography paragraph>{description}</Typography>
 				</CardContent>
 			</Collapse>
 		</Card>

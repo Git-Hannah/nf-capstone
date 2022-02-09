@@ -5,7 +5,7 @@ export const exercises = [
 		description:
 			"Put your hand on a fixed object like a table or wall, move around it with your body without moving the hand. Notice how your arm moves and looks. Take your hand an inch away from the object, let it hover there and repeat the movements, again without moving the hand. Try with different states of muscle tension!",
 		duration: "10min", // 10 minutes -> 10*60*1000
-		image: "/fixpoint.png",
+		image: "/images/fixpoint.png",
 	},
 	{
 		id: "Imaginary Object",

@@ -1,4 +1,4 @@
-	{
+	[{
 		"id": "Fixpoint",
 		"name": "Fixpoint",
 		"description":
@@ -25,4 +25,4 @@
 		"description":
 			"Scratch your nose to feel it, then imagine your nose has an eye which wants to see everything first. Explore your surroundings, leading with your nose!",
 		"duration": "5min" // 5 minutes -> 5*60*1000
-	}
+	}]

@@ -1,15 +1,17 @@
 import React from "react";
 import CardExercise from "../../molecules/card-exercise";
-import { exercises } from "../../ions/exercises";
+import useGet from "../../ions/hooks/fetch/get";
+import Stack from "@mui/material/Stack";
 
 const CardWorkout = () => {
+	const { data } = useGet("/api/exercises");
 	return (
 		<div>
-			<ul>
-				{exercises.map(exercise => {
+			<Stack spacing={2}>
+				{data?.map(exercise => {
 					return <CardExercise key={exercise.id} {...exercise} />;
 				})}
-			</ul>
+			</Stack>
 		</div>
 	);
 };

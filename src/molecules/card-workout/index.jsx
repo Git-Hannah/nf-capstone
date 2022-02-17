@@ -4,7 +4,7 @@ import useGet from "../../ions/hooks/fetch/get";
 import Stack from "@mui/material/Stack";
 
 const CardWorkout = () => {
-	const { data } = useGet("/api/foo");
+	const { data } = useGet("/api/exercises");
 	return (
 		<div>
 			<Stack spacing={2}>

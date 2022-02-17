@@ -4,13 +4,16 @@ import Layout from "../../organisms/layout";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { endpoints } from "../../ions/endpoints";
+import axios from "axios";
 
 const Page = () => {
-	const handleSubmit = event => {
+	const handleSubmit = async event => {
 		event.preventDefault();
 		const formData = new FormData(event.target);
 		const formValues = Object.fromEntries(formData);
-		console.log(formValues);
+		const response = await axios.post(endpoints.exercises, formValues);
+		console.log(response);
 		event.target.reset();
 	};
 	return (

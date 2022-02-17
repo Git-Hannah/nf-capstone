@@ -1,10 +1,11 @@
 import React from "react";
 import CardExercise from "../../molecules/card-exercise";
 import useGet from "../../ions/hooks/fetch/get";
+import { endpoints } from "../../ions/endpoints";
 import Stack from "@mui/material/Stack";
 
 const CardWorkout = () => {
-	const { data } = useGet("/api/exercises");
+	const { data } = useGet(endpoints.exercises);
 	return (
 		<div>
 			<Stack spacing={2}>

@@ -10,6 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 
 const ExpandMore = styled(props => {
 	const { expand, ...other } = props;
@@ -46,7 +47,9 @@ const CardExercise = ({ name, description, duration, image }) => {
 			</CardActions>
 			<Collapse unmountOnExit in={expanded} timeout="auto">
 				<CardContent>
-					<Typography paragraph>{description}</Typography>
+					<Typography component="div">
+						<ReactMarkdown>{description}</ReactMarkdown>
+					</Typography>
 				</CardContent>
 			</Collapse>
 		</Card>

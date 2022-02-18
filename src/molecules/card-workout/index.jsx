@@ -10,7 +10,8 @@ const CardWorkout = () => {
 		<div>
 			<Stack spacing={2}>
 				{data?.map(exercise => {
-					return <CardExercise key={exercise.id} {...exercise} />;
+					console.log(exercise);
+					return <CardExercise key={exercise._id} {...exercise} />;
 				})}
 			</Stack>
 		</div>

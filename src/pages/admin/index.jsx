@@ -4,10 +4,14 @@ import Layout from "../../organisms/layout";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { endpoints } from "../../ions/endpoints";
 import axios from "axios";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const Page = () => {
+	const { data: session } = useSession();
+	console.log(session);
 	const handleSubmit = async event => {
 		event.preventDefault();
 		const formData = new FormData(event.target);
@@ -21,6 +25,29 @@ const Page = () => {
 			<Head>
 				<title key="title">Admin</title>
 			</Head>
+			{session ? (
+				<div>
+					<img src={session.user.image} alt={session.user.name} />
+					<h2>{session.user.name}</h2>
+					<Button
+						onClick={() => {
+							signOut();
+						}}
+					>
+						Log Out
+					</Button>
+				</div>
+			) : (
+				<Button
+					startIcon={<GitHubIcon />}
+					onClick={() => {
+						signIn("github");
+					}}
+				>
+					Log in with GitHub
+				</Button>
+			)}
+
 			<Stack component="form" spacing={2} onSubmit={handleSubmit}>
 				<TextField required name="name" label="Name of Exercise" variant="outlined" />
 				<TextField

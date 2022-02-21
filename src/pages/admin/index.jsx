@@ -20,9 +20,7 @@ const Page = () => {
 		console.log(response);
 		event.target.reset();
 	};
-	console.log(session);
-	console.log(session?.user.id);
-	console.log(session?.user.id, process.env.ADMIN_USER_KEY);
+	
 	return (
 		
 		<Layout>

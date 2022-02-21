@@ -22,7 +22,9 @@ const Page = () => {
 	};
 	console.log(session);
 	console.log(session?.user.id);
+	console.log(session?.user.id, process.env.ADMIN_USER_KEY);
 	return (
+		
 		<Layout>
 			<Head>
 				<title key="title">Admin</title>

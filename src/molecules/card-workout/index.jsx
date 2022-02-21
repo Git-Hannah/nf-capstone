@@ -7,7 +7,7 @@ import Stack from "@mui/material/Stack";
 const CardWorkout = () => {
 	const { data } = useGet(endpoints.exercises);
 	return (
-		<div>
+		<div className="a-class">
 			<Stack spacing={2}>
 				{data?.map(exercise => {
 					console.log(exercise);

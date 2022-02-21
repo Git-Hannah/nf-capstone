@@ -20,12 +20,14 @@ const Page = () => {
 		console.log(response);
 		event.target.reset();
 	};
+	console.log(session);
+	console.log(session?.user.id);
 	return (
 		<Layout>
 			<Head>
 				<title key="title">Admin</title>
 			</Head>
-			{session ? (
+			{session && session.user.id === process.env.ADMIN_USER_KEY ? (
 				<div>
 					<img src={session.user.image} alt={session.user.name} />
 					<h2>{session.user.name}</h2>
@@ -36,6 +38,33 @@ const Page = () => {
 					>
 						Log Out
 					</Button>
+					<Stack component="form" spacing={2} onSubmit={handleSubmit}>
+						<TextField
+							required
+							name="name"
+							label="Name of Exercise"
+							variant="outlined"
+						/>
+						<TextField
+							required
+							multiline
+							name="description"
+							label="Description"
+							variant="outlined"
+							InputProps={{
+								sx: { fontFamily: "monospace" },
+							}}
+						/>
+						<TextField
+							required
+							name="duration"
+							type="number"
+							label="Duration"
+							variant="outlined"
+						/>
+						<TextField required name="image" label="Image" variant="outlined" />
+						<Button type="submit">Create</Button>
+					</Stack>
 				</div>
 			) : (
 				<Button
@@ -47,29 +76,6 @@ const Page = () => {
 					Log in with GitHub
 				</Button>
 			)}
-
-			<Stack component="form" spacing={2} onSubmit={handleSubmit}>
-				<TextField required name="name" label="Name of Exercise" variant="outlined" />
-				<TextField
-					required
-					multiline
-					name="description"
-					label="Description"
-					variant="outlined"
-					InputProps={{
-						sx: { fontFamily: "monospace" },
-					}}
-				/>
-				<TextField
-					required
-					name="duration"
-					type="number"
-					label="Duration"
-					variant="outlined"
-				/>
-				<TextField required name="image" label="Image" variant="outlined" />
-				<Button type="submit">Create</Button>
-			</Stack>
 		</Layout>
 	);
 };

@@ -15,6 +15,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
+const styledCard = {
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
+	flexDirection: "column",
+	width: "800px"
+};
+
 const ExpandMore = styled(props => {
 	const { expand, ...other } = props;
 	return <IconButton {...other} />;
@@ -35,21 +43,21 @@ const CardExercise = ({ _id: id, name, description, duration, image }) => {
 	};
 
 	return (
-		<Card sx={{ maxWidth: 345 }}>
+		<Card display="flex" alignItems="center" sx={{ ...styledCard }}>
 			<CardActions>
 				<Checkbox
 					checked={Boolean(meta[id]?.checked)}
 					icon={<StarBorderIcon />}
 					checkedIcon={<StarIcon />}
 					inputProps={{ "aria-label": "controlled" }}
-					sx={{marginLeft: "auto"}}
+					sx={{ marginLeft: "auto" }}
 					onChange={event => {
 						setBookmark(id, event.target.checked);
 					}}
 				/>
 			</CardActions>
 			<CardHeader title={name} />
-			<Image src={image} height="50vw" width="80vw" alt="Fixpoint" />
+			<Image src={image} height="100%" width="80vw" alt="Fixpoint" />
 			<CardContent>Time: {duration}</CardContent>
 			<CardActions disableSpacing>
 				<ExpandMore

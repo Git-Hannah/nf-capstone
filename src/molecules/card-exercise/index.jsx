@@ -16,10 +16,10 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
 const StyledImage = styled(Image)`
+	margin: auto;
 	box-shadow: 0 0 0 2px red;
 	object-fit: contain;
 	object-position: center;
-	margin: auto;
 `;
 const ExpandMore = styled(props => {
 	const { expand, ...other } = props;

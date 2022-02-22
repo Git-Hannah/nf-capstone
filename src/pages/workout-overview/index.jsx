@@ -11,9 +11,7 @@ const Page = () => {
 				<meta key="description" name="description" content="Workout Overview" />
 			</Head>
 			<h1>Workout Overview</h1>
-
-					<CardWorkout />
-				
+			<CardWorkout />
 		</Layout>
 	);
 };

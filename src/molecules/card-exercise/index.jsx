@@ -56,7 +56,7 @@ const CardExercise = ({ _id: id, name, description, duration, image }) => {
 			</CardActions>
 			<CardHeader title={name} />
 			<CardContent sx={{ position: "relative", display: "flex", justifyContent: "center" }}>
-				<StyledImage src={image} height={200} width={200} alt="Fixpoint" />
+				<StyledImage src={image} height={200} width={200} alt={image} />
 			</CardContent>
 			<CardContent>Time: {duration}</CardContent>
 			<CardActions disableSpacing>

@@ -5,6 +5,7 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Image from "next/image";
 import { endpoints } from "../../ions/endpoints";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
@@ -20,16 +21,21 @@ const Page = () => {
 		console.log(response);
 		event.target.reset();
 	};
-	
+
 	return (
-		
 		<Layout>
 			<Head>
 				<title key="title">Admin</title>
 			</Head>
 			{session && session.user.id === process.env.ADMIN_USER_KEY ? (
 				<div>
-					<img src={session.user.image} alt={session.user.name} />
+					<Image
+						src={session.user.image}
+						height={200}
+						width={200}
+						alt={session.user.name}
+					/>
+
 					<h2>{session.user.name}</h2>
 					<Button
 						onClick={() => {

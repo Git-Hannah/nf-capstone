@@ -1,14 +1,12 @@
-import Link from "next/link";
+import Toolbar from "@mui/material/Toolbar";
+import AppBar from "@mui/material/AppBar";
 import React from "react";
 
 const Header = () => {
 	return (
-		<header>
-			<nav data-test-id="navigation">
-				<Link href="/">Home</Link>
-				<Link href="/about">About me</Link>
-			</nav>
-		</header>
+		<AppBar position="fixed" color="primary">
+			<Toolbar>Hallo</Toolbar>
+		</AppBar>
 	);
 };
 

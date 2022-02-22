@@ -6,10 +6,10 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 const theme = createTheme({
 	palette: {
 		primary: {
-			main: "#888800",
+			main: "#E8A7C8",
 		},
 		secondary: {
-			main: "#678543",
+			main: "#C8E8A7",
 		},
 		background: {
 			default: "#eee",
@@ -82,7 +82,7 @@ const theme = createTheme({
 				root: {
 					//background: "yellow",
 					"& .MuiCheckbox-root": {
-						background: "red",
+						background: "#A7C8E8",
 					},
 				},
 			},

@@ -8,9 +8,11 @@ import PanToolIcon from "@mui/icons-material/PanTool";
 //import BubbleChartIcon from "@mui/icons-material/BubbleChart";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import Paper from "@mui/material/Paper";
+import { useRouter } from "next/router";
 
 const NavBar = () => {
 	const [value, setValue] = React.useState("recents");
+	const router = useRouter();
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
@@ -27,6 +29,7 @@ const NavBar = () => {
 						sx={{
 							backgroundColor: "red",
 						}}
+						onClick={() => router.push("/")}
 					/>
 					<BottomNavigationAction
 						label="Workout"
@@ -35,6 +38,7 @@ const NavBar = () => {
 						sx={{
 							backgroundColor: "yellow",
 						}}
+						onClick={() => router.push("/workout-overview")}
 					/>
 					<BottomNavigationAction
 						label="Favorites"
@@ -44,6 +48,7 @@ const NavBar = () => {
 							backgroundColor: "green",
 							color: "white",
 						}}
+						onClick={() => router.push("/bookmarks")}
 					/>
 					<BottomNavigationAction
 						label="Wiki"
@@ -53,6 +58,7 @@ const NavBar = () => {
 							backgroundColor: "blue",
 							color: "white",
 						}}
+						onClick={() => router.push("/")}
 					/>
 				</BottomNavigation>
 			</Paper>

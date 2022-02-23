@@ -15,13 +15,13 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
-const styledCard = {
-	display: "flex",
-	alignItems: "center",
-	justifyContent: "center",
-	flexDirection: "column",
-	width: "800px"
-};
+const StyledImage = styled(Image)`
+	margin: auto;
+	box-shadow: 0 0 0 2px red;
+	object-fit: contain;
+	object-position: center;
+`;
+
 
 const ExpandMore = styled(props => {
 	const { expand, ...other } = props;
@@ -43,7 +43,7 @@ const CardExercise = ({ _id: id, name, description, duration, image }) => {
 	};
 
 	return (
-		<Card display="flex" alignItems="center" sx={{ ...styledCard }}>
+		<Card>
 			<CardActions>
 				<Checkbox
 					checked={Boolean(meta[id]?.checked)}
@@ -57,7 +57,9 @@ const CardExercise = ({ _id: id, name, description, duration, image }) => {
 				/>
 			</CardActions>
 			<CardHeader title={name} />
-			<Image src={image} height="100%" width="80vw" alt="Fixpoint" />
+			<CardContent sx={{ position: "relative", display: "flex", justifyContent: "center" }}>
+				<StyledImage src={image} height={200} width={200} alt={image} />
+			</CardContent>
 			<CardContent>Time: {duration}</CardContent>
 			<CardActions disableSpacing>
 				<ExpandMore

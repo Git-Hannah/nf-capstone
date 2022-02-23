@@ -11,7 +11,7 @@ export default async function handler(request, response) {
 		case "GET":
 			try {
 				const exercises = await Exercise.find({}); /* find all the data in our database */
-				console.log(exercises);
+				//console.log(exercises);
 				response.status(200).json(exercises);
 			} catch (error) {
 				response.status(400).json({ success: false });

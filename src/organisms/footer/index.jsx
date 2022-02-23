@@ -1,9 +1,10 @@
 import React from "react";
+import NavBar from "../../molecules/navbar";
 
 const Footer = () => {
 	return (
 		<footer>
-			<div>© 2022 by Me</div>
+			<NavBar />
 		</footer>
 	);
 };

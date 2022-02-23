@@ -7,10 +7,10 @@ import { useRouter } from "next/router";
 // This is the style for the image
 const StyledImage = styled(Image)`
 	margin: auto;
+	border-radius: 100px;
 	box-shadow: 0 0 0 2px red;
 	object-fit: contain;
 	object-position: center;
-	border-radius: 100px;
 `;
 // This is the starting component
 const WholePage = ({ children, className }) => {

@@ -27,7 +27,7 @@ const NavBar = () => {
 						value="home"
 						icon={<FestivalIcon />}
 						sx={{
-							backgroundColor: "red",
+							backgroundColor: "#FAD2E1",
 						}}
 						onClick={() => router.push("/")}
 					/>
@@ -36,7 +36,7 @@ const NavBar = () => {
 						value="workout"
 						icon={<PanToolIcon />}
 						sx={{
-							backgroundColor: "yellow",
+							backgroundColor: "#FFF1E6",
 						}}
 						onClick={() => router.push("/workout-overview")}
 					/>
@@ -45,8 +45,8 @@ const NavBar = () => {
 						value="favorites"
 						icon={<TagFacesIcon />}
 						sx={{
-							backgroundColor: "green",
-							color: "white",
+							backgroundColor: "#E2ECE9",
+							//color: "white",
 						}}
 						onClick={() => router.push("/bookmarks")}
 					/>
@@ -55,8 +55,8 @@ const NavBar = () => {
 						value="wiki"
 						icon={<LocalLibraryIcon />}
 						sx={{
-							backgroundColor: "blue",
-							color: "white",
+							backgroundColor: "#DFE7FD",
+							//color: "white",
 						}}
 						onClick={() => router.push("/")}
 					/>

@@ -21,6 +21,8 @@ const StyledImage = styled(Image)`
 	object-fit: contain;
 	object-position: center;
 `;
+
+
 const ExpandMore = styled(props => {
 	const { expand, ...other } = props;
 	return <IconButton {...other} />;

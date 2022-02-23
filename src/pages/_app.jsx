@@ -6,7 +6,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 const theme = createTheme({
 	palette: {
 		primary: {
-			main: "#E8A7C8",
+			main: "#CDDAFD",
 		},
 		secondary: {
 			main: "#C8E8A7",
@@ -41,16 +41,16 @@ const theme = createTheme({
 					alignItems: "center",
 					justifyContent: "center",
 					"&:nth-child(1)": {
-						marginTop: 8,
+						marginTop: 6,
 					},
 					"&:nth-child(2)": {
-						marginTop: -8,
+						marginTop: -3,
 					},
 					"&:nth-child(3)": {
 						marginTop: 4,
 					},
 					"&:nth-child(4)": {
-						marginTop: -1,
+						marginTop: 0,
 					},
 				},
 				label: {
@@ -60,9 +60,7 @@ const theme = createTheme({
 		},
 		MuiCard: {
 			defaultProps: {
-				raised: false,
-				square: true,
-				variant: "outlined",
+				// variant: "outlined",
 			},
 			styleOverrides: {
 				root: {
@@ -82,11 +80,26 @@ const theme = createTheme({
 				root: {
 					//background: "yellow",
 					"& .MuiCheckbox-root": {
-						background: "#A7C8E8",
+						background: "#FDE2E4",
 					},
 				},
 			},
 		},
+		MuiToolbar: {
+			styleOverrides: {
+				root: {
+					height: 20,
+					marginTop: 1,
+				},
+			},
+		},
+		// PrivateSwitchBase: {
+		// 	styleOverrides: {
+		// 		root: {
+		// 			color: "black",
+		// 		},
+		// 	},
+		// },
 	},
 });
 const App = ({ Component, pageProps }) => {

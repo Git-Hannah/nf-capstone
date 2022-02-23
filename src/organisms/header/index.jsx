@@ -5,7 +5,9 @@ import React from "react";
 const Header = () => {
 	return (
 		<AppBar position="fixed" color="primary">
-			<Toolbar>Hallo</Toolbar>
+			<Toolbar>
+				<h2>Express your silence</h2>
+			</Toolbar>
 		</AppBar>
 	);
 };

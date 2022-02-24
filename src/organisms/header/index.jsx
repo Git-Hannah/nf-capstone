@@ -15,7 +15,7 @@ const Header = () => {
 	console.log(asPath);
 
 	return (
-		<AppBar position="fixed" color="primary">
+		<AppBar position="sticky" color="primary">
 			<Toolbar>
 				<Typography variant="h5" component="h1">
 					{headlines[asPath] ?? headlines.default}

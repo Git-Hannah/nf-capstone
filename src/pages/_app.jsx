@@ -2,6 +2,7 @@ import React from "react";
 import { SessionProvider } from "next-auth/react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { Global, css } from "@emotion/react";
 
 const theme = createTheme({
 	palette: {
@@ -102,11 +103,23 @@ const theme = createTheme({
 		// },
 	},
 });
+
+const globalStyles = (
+	<Global
+		styles={css`
+			#__next {
+				display: contents;
+			}
+		`}
+	/>
+);
+
 const App = ({ Component, pageProps }) => {
 	return (
 		<SessionProvider session={pageProps.session}>
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
+				{globalStyles}
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</SessionProvider>

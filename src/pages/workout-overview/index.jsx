@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Layout from "../../organisms/layout";
-import CardWorkout from "../../molecules/card-workout";
+import CardWorkout from "../../organisms/card-workout";
 
 const Page = () => {
 	return (

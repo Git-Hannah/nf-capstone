@@ -9,6 +9,8 @@ import Image from "next/image";
 import { endpoints } from "../../ions/endpoints";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
+import { Grid } from "@contour/react";
+
 
 const Page = () => {
 	const { data: session } = useSession();
@@ -28,7 +30,7 @@ const Page = () => {
 				<title key="title">Admin</title>
 			</Head>
 			{session && session.user.id === process.env.ADMIN_USER_KEY ? (
-				<div>
+				<Grid strategy="grid" align="start" colCount={{ xs: 1, s: 1, m: 2, l: 3, xl: 3 }}>
 					<Image
 						src={session.user.image}
 						height={200}
@@ -71,7 +73,7 @@ const Page = () => {
 						<TextField required name="image" label="Image" variant="outlined" />
 						<Button type="submit">Create</Button>
 					</Stack>
-				</div>
+				</Grid>
 			) : (
 				<Button
 					startIcon={<GitHubIcon />}

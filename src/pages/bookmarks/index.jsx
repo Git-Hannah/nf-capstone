@@ -17,7 +17,6 @@ const Page = () => {
 			<Head>
 				<title key="title">Bookmarks</title>
 			</Head>
-			<h1>Bookmarks</h1>
 			<Grid strategy="grid" align="start" colCount={{ xs: 1, s: 1, m: 2, l: 3, xl: 3 }}>
 				{data
 					?.filter(exercise => Boolean(meta[exercise._id]?.checked))

@@ -10,7 +10,6 @@ const Page = () => {
 				<title key="title">Workout Overview</title>
 				<meta key="description" name="description" content="Workout Overview" />
 			</Head>
-			<h1>Workout Overview</h1>
 			<CardWorkout />
 		</Layout>
 	);

@@ -17,7 +17,7 @@ const WholePage = ({ children, className }) => {
 // This is the end component which is the starting component + the style attributes
 // WholePage is passed down to StyledWholePage
 const StyledWholePage = styled(WholePage)`
-	background: red;
+	background: black;
 `;
 
 // The combined component styles the StyledWholePage tag, The StyledImage styles the image

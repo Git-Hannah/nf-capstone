@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 const headlines = {
 	"/bookmarks": "Bookmarks",
 	"/workout-overview": "Workouts",
+	"/admin": "Admin",
 	default: "Mime",
 };
 const Header = () => {

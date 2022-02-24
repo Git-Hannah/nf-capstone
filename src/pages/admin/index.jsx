@@ -10,7 +10,7 @@ import { endpoints } from "../../ions/endpoints";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { Grid } from "@contour/react";
-
+import Box from "@mui/material/Box";
 
 const Page = () => {
 	const { data: session } = useSession();
@@ -46,6 +46,7 @@ const Page = () => {
 					>
 						Log Out
 					</Button>
+
 					<Stack component="form" spacing={2} onSubmit={handleSubmit}>
 						<TextField
 							required

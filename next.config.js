@@ -9,7 +9,7 @@ const nextConfig = {
 		ADMIN_USER_KEY: process.env.ADMIN_USER_KEY,
 	},
 	images: {
-		domains: ["images.unsplash.com", "http.cat"],
+		domains: ["images.unsplash.com", "http.cat", "avatars.githubusercontent.com"],
 	},
 };
 

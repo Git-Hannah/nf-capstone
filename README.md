@@ -15,7 +15,7 @@
 
 > Practice pantomime with simple exercises, memorize your favorites, and get excited about upcoming challenges added by an admin!
 
-![Video](public/hs-nf-capstone-mime-app-video.mp4)
+<!-- ![Video](public/hs-nf-capstone-mime-app-video.mp4) -->
 
 ### This is a capstone project for [neuefische](https://www.neuefische.de/) web development bootcamp.
 

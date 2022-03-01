@@ -17,6 +17,10 @@
 
 <!-- ![Video](public/hs-nf-capstone-mime-app-video.mp4) -->
 
+
+https://user-images.githubusercontent.com/72019322/156157841-8c17a89e-5fd1-469b-83d1-7b45a06261c9.mp4
+
+
 ### This is a capstone project for [neuefische](https://www.neuefische.de/) web development bootcamp.
 
 To work with me feel free to contact me on [LinkedIn](https://www.linkedin.com/in/hannah-senft/) !

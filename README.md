@@ -1,128 +1,37 @@
-# Next App
+# MiME
 
-This is a template for a Next.js app.
+**App for training and learning to mime**
 
-It uses the following tools/libraries:
+<img src="public/hs-nf-capstone-mime-app-1.png" alt="Mime App Landing Page" width="300"/>
 
-* [Storybook](https://storybook.js.org/)
-* [Cypress](https://cypress.io/)
-* [Jest](https://jestjs.io/)
-* [Commitlint](https://commitlint.js.org/)
-* [Stylelint](https://stylelint.io/)
-* [Eslint](https://eslint.org/)
-* [Prettier](https://prettier.io/)
+<!-- ![Mime App Landing Page](/public/hs-nf-capstone-mime-app-1.png) -->
 
-## Getting started
+### **Learn to communicate non-verbally with MiME!**
 
-**Run the development server:**
+> With exercises that come from a MongoDB database and can be bookmarked to your local storage!
 
-```bash
-npm run dev
-```
+<img src="public/hs-nf-capstone-mime-app-2.png" alt="Mime App Workouts" width="200"/> |
+<img src="public/hs-nf-capstone-mime-app-3.png" alt="Mime App Bookmarks" width="200"/>
 
-**Run storybook:**
+> Practice pantomime with simple exercises, memorize your favorites, and get excited about upcoming challenges added by an admin!
 
-```shell
-npm run storybook
-```
+![Video](public/hs-nf-capstone-mime-app-video.mp4)
 
+### This is a capstone project for [neuefische](https://www.neuefische.de/) web development bootcamp.
 
-## Atomic design
+To work with me feel free to contact me on [LinkedIn](https://www.linkedin.com/in/hannah-senft/) !
 
-We use atomic design. You can read more about our decision in the
-[documentation](./docs/ATOMIC_DESIGN.md).
+**_The app is currently optimized for mobile!_**
 
-## Behavior Driven Development
+## `Tech Stack`
 
-We use behavior tests. You can read more about our decision in the
-[documentation](./docs/BEHAVIOR_DRIVEN_DEVELOPMENT.md).
-
-## Test Driven Development
-
-We jest to write unit tests. Please look at the Documentation for [Jest](https://jestjs.io/)
-and [testing-library](https://testing-library.com/docs/react-testing-library/intro/).
-
-## Commitlint
-
-We use commitlint to ensure conventional commit messages. You can read more about our decision in
-the [documentation](./docs/COMMITS.md).
-
-
-## Commands
-
-**Run the development server:**
-
-```bash
-npm run dev
-```
-
-**Build:**
-
-```shell
-npm run build
-```
-
-**Run storybook:**
-
-```shell
-npm run storybook
-```
-
-**Build storybook:**
-
-```shell
-npm run storybook:build
-```
-
-**Run e2e tests:**
-
-```shell
-npm run cypress # local without server
-# npm run cypress:run # headless
-# npm run test:e2e # with server
-```
-
-**Run unit tests:**
-
-```shell
-npm run jest
-# npm run jest:watch # watch
-# npm run test:unit # same as "npm run jest"
-```
-
-**Run all tests:**
-
-```shell
-npm run test
-```
-
-**Run stylelint**
-
-```shell
-npm run stylelint
-```
-
-**Run eslint**
-
-```shell
-npm run eslint
-```
-
-**Run all linters**
-
-```shell
-npm run lint
-```
-
-## Skipping linters
-
-If you need to skip a linter you can add the `--no-verify` flag.
-
-> Warning! We strongly advise against skipping linters.
-
-```shell
-# Skipping commitlint
-git commit README.md -m "this is a dirty commit" --no-verify
-# Skipping linters
-git push --no-verify
-```
+- React
+- React Hooks
+- Next.js
+- Next-Auth.js
+- MUI
+- Emotion Styled-Components
+- Node.js
+- MongoDB
+- Mongoose
+- localStorage

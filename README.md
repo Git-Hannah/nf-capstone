@@ -15,8 +15,6 @@
 
 > Practice pantomime with simple exercises, memorize your favorites, and get excited about upcoming challenges added by an admin!
 
-<!-- ![Video](public/hs-nf-capstone-mime-app-video.mp4) -->
-
 
 https://user-images.githubusercontent.com/72019322/156157841-8c17a89e-5fd1-469b-83d1-7b45a06261c9.mp4
 

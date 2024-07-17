@@ -58,7 +58,7 @@ const Page = () => {
 				}}
 			>
 				{" "}
-				//The white button that links to the workout overview
+				{/* The white button that links to the workout overview */}
 				<Link passHref href="/workout-overview">
 					<Button
 						variant="contained"

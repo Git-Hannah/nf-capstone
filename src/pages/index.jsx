@@ -39,7 +39,7 @@ const Page = () => {
 				<meta property="og:image:height" content="627" />
 				<meta property="og:type" content="application" />
 			</Head>
-			//src="https://images.unsplash.com/photo-1542887800-faca0261c9e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=727&q=80"
+
 			<StyledImage
 				src="/images/hands.jpg"
 				alt="Expressive Hands in a spotlight in black and white"
@@ -78,3 +78,4 @@ const Page = () => {
 };
 
 export default Page;
+// original image source: src="https://images.unsplash.com/photo-1542887800-faca0261c9e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=727&q=80"

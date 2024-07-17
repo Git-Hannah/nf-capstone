@@ -2,7 +2,7 @@
 
 **App for training and learning to mime**
 
-#### Deployment: [MiME](https://nf-capstone-theta.vercel.app/)
+#### Deployment: [MiME](https://mime-training-app.hannahsenft.com/)
 
 <img src="public/hs-nf-capstone-mime-app-1.png" alt="Mime App Landing Page" width="300"/>
 

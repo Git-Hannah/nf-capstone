@@ -1,9 +1,12 @@
 import React from "react";
+import Head from "next/head"
 import Image from "next/image";
 import styled from "@emotion/styled";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Link from "next/link";
+
+// const Metadata 
 
 // This is the style for the image
 const StyledImage = styled(Image)`
